@@ -15,7 +15,7 @@ export const SubmitButton = () => {
     setResult(null);
     setError(null);
     try {
-      const response = await fetch('/pipelines/parse', {
+      const response = await fetch('/_/backend/pipelines/parse', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nodes, edges }),
