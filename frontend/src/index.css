@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-slate-900 text-slate-900 antialiased;
+    font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .node-input {
+    @apply h-8 w-full rounded-md border border-slate-200 bg-slate-50 px-2 text-xs text-slate-700 outline-none transition focus:border-blue-400 focus:bg-white focus:ring-2 focus:ring-blue-100;
+  }
+}
+
+/* ── React Flow edges ──────────────────────────── */
+.react-flow__edge-path {
+  stroke: #818cf8;
+  stroke-width: 2;
+}
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: #a5b4fc;
+  stroke-width: 2.5;
+}
+.react-flow__connection-path {
+  stroke: #818cf8;
+  stroke-width: 2;
+}
+
+/* ── Controls ──────────────────────────────────── */
+.react-flow__controls {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+.react-flow__controls-button {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  fill: #94a3b8 !important;
+  color: #94a3b8 !important;
+}
+.react-flow__controls-button:hover {
+  background: #334155 !important;
+  fill: #e2e8f0 !important;
+}
+
+/* ── Minimap ───────────────────────────────────── */
+.react-flow__minimap {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
